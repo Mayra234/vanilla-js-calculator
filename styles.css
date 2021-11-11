@@ -10,7 +10,13 @@ html {
 
 body {
   height: 100%;
-  /* background: coral; */
+  font-family: 'Roboto Condensed';
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url(assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf)
+    format('truetype');
 }
 
 .container {
@@ -31,41 +37,40 @@ body {
 }
 
 .background-green {
-  background: #34dbb7;
+  background-color: #34dbb7;
   width: 100%;
   height: 100%;
 }
 
 .background-gray {
-  background: #e6eaed;
+  background-color: #e6eaed;
   width: 100%;
   height: 100%;
 }
 
 .calculator {
-  font-family: Helvetica;
+  padding: 60px 25px 40px 25px;
   border-radius: 20px;
-  width: 350px;
+  width: 330px;
   height: 500px;
   background: #ffffff;
+  box-shadow: 0px 4px 32px 2px rgba(180, 173, 173, 0.75);
+  -webkit-box-shadow: 0px 4px 32px 2px rgba(180, 173, 173, 0.75);
+  -moz-box-shadow: 0px 4px 32px 2px rgba(180, 173, 173, 0.75);
   display: grid;
-  grid-template-rows: auto auto auto 1fr;
-  box-shadow: 0px 4px 32px 2px rgba(164, 157, 157, 0.75);
-  -webkit-box-shadow: 0px 4px 32px 2px rgba(164, 157, 157, 0.75);
-  -moz-box-shadow: 0px 4px 32px 2px rgba(164, 157, 157, 0.75);
+  grid-template-rows: 150px auto 1fr;
 }
 
-.operation {
-  text-align: end;
-  min-height: 60px;
-  font-size: 20px;
+.screen {
+  text-align: right;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 50px 1fr;
 }
 
 .operations-viewer {
-  padding: 20px;
-  min-height: 60px;
+  padding: 25px 18px 0px 0px;
+
+  font-size: 20px;
 }
 
 .number {
@@ -73,31 +78,34 @@ body {
 }
 
 .operation-symbol {
+  font-size: 14px;
   color: #52e0c0;
 }
 
 .operation-result {
   color: #4b4b4b;
-  padding: 20px;
-  min-height: 90px;
+  padding: 10px;
+  padding-top: 0;
+  min-height: 60px;
   font-size: 80px;
 }
 
 .separator {
   height: 1px;
-  width: 70%;
-  background: #c1c1c1;
+  width: 82%;
+  background: #dedede;
   margin: auto;
 }
 
 .keyboard {
-  margin: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.button-operation {
+.button {
+  margin: 0 8px;
+  font-family: 'Roboto Condensed';
   font-size: 21px;
   width: 50px;
   height: 50px;
@@ -108,15 +116,15 @@ body {
   align-items: center;
 }
 
-.row-key-1 {
+.logical-operator {
   color: black;
 }
 
-.column-key-4 {
+.arithmetic-operators {
   color: #4fe4c1;
 }
 
-.number-key {
+.numeric-keyboard {
   color: #c1c1c1;
 }
 
@@ -124,4 +132,7 @@ body {
   background: #4fe4c1;
   color: white;
   border-radius: 10%;
+  box-shadow: 0px 0px 14px 4px rgba(195, 255, 248, 0.75);
+  -webkit-box-shadow: 0px 0px 14px 4px rgba(195, 255, 248, 0.75);
+  -moz-box-shadow: 0px 0px 14px 4px rgba(195, 255, 248, 0.75);
 }
