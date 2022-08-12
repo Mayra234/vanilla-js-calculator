@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Calculadora</title>
-  </head>
-  <body>
+export const Calculator = () => {
+  return /*html*/ `
     <div class="container">
       <div class="floating-container">
         <div class="calculator">
@@ -49,5 +41,5 @@
       <div class="background-green"></div>
       <div class="background-gray"></div>
     </div>
-  </body>
-</html>
+    `;
+};
