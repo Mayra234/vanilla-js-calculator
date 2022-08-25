@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export const Background = ({ palette = '', ...props }) => {
+export const Background = ({ palette = 'primary', ...props }) => {
   const [style, setStyle] = useState(props.style);
 
   const changePalette = () => {
