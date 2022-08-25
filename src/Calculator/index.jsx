@@ -1,5 +1,7 @@
+import React from 'react';
+
 export const Calculator = () => {
-  return /*html*/ `
+  return (
     <div class="container">
       <div class="floating-container">
         <div class="calculator">
@@ -41,5 +43,5 @@ export const Calculator = () => {
       <div class="background-green"></div>
       <div class="background-gray"></div>
     </div>
-    `;
+  );
 };
