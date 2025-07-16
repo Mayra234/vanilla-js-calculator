@@ -15,6 +15,41 @@
   grid-template-rows: 50px 1fr;
 }
 
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.logical-operator:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.arithmetic-operators:hover {
+  background: #4fe4c1;
+  color: #ffffff;
+}
+
+.numeric-keyboard:hover {
+  background: #f0f0f0;
+  color: #4b4b4b;
+}
+
+.equal-key:hover {
+  background: #36d5a7;
+  box-shadow: 0px 0px 18px 6px rgba(195, 255, 248, 1);
+}
+
 .number {
   color: #cacaca;
   overflow-x: auto;
