@@ -17,6 +17,9 @@
 
 .number {
   color: #cacaca;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: right;
 }
 
 .operation-symbol {
