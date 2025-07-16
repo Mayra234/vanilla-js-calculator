@@ -40,9 +40,13 @@ export const Calculator = () => {
       }
 
       if (value === '.') {
+        if (prev === '') {
+          return '0.';
+        }
+
         const lastNumber = prev.split(/[-+x/]/).pop();
         if (lastNumber.includes('.')) {
-          return prev; // ignora si ya tiene punto
+          return prev;
         }
       }
 
